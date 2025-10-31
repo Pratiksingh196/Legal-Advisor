@@ -1,0 +1,178 @@
+/* videoComponent.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+
+.meetVideoContainer {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.meetUserVideo {
+  position: absolute;
+  bottom: 10vh;
+  left: 2vw;
+  height: 20vh;
+  width: auto;
+  border-radius: 10px;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 12px #38bdf8;
+  z-index: 2;
+}
+
+.buttonContainers {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+  z-index: 5;
+}
+
+.buttonContainers svg {
+  font-size: 2.5rem;
+  margin: 0 15px;
+  padding: 10px;
+  background: #1e293b;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+
+.buttonContainers svg:hover {
+  background: #334155;
+  transform: scale(1.1);
+}
+
+.conferenceView {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+  margin-top: auto;
+  margin-bottom: 80px;
+  z-index: 1;
+}
+
+.conferenceView video {
+  width: 30vw;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #4ade80;
+  box-shadow: 0 0 10px #4ade80;
+}
+
+.chatRoom {
+  position: absolute;
+  height: 90vh;
+  right: 0;
+  background: #1f2937;
+  color: white;
+  border-radius: 10px 0 0 10px;
+  width: 25vw;
+  padding: 20px;
+  z-index: 10;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.chatContainer {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chattingDisplay {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.chattingDisplay p {
+  margin: 4px 0;
+}
+
+.chattingArea {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.chattingArea input,
+.chattingArea .MuiTextField-root {
+  flex: 1;
+}
+ .lobbyPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.lobbyBox {
+  display: flex ;
+  flex-direction: column ;
+  align-items: center ;
+  gap: 20px ;
+  background: rgba(255, 255, 255, 0.05) ;
+  backdrop-filter: blur(10px) ;
+  padding: 40px 30px ;
+  border-radius: 20px ;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3 );
+  color: white ;
+  width: 90% ;
+  max-width: 400px ;
+}
+
+.lobbyBox h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.lobbyPreview {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 12px #38bdf8;
+}
+
+
+.video-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 10px;
+}
+
+.video {
+  width: 320px;
+  height: 240px;
+  border-radius: 12px;
+  background: #000;
+}
+
+.name-tag {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
